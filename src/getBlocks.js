@@ -140,7 +140,7 @@ const getBlocks = (params: ParamsType): ?Array<React$Element<*>> => {
             const atomic = atomicHandler(item, contentState.entityMap);
             if (viewBefore) {
               return (
-                <View key={generateKey()}>
+                <View key={item.key}>
                   {viewBefore}
                   {atomic}
                 </View>
